@@ -45,7 +45,7 @@ jobs:
   create_comment:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - uses: actions-ecosystem/action-regex-match@v2
         id: regex-match
@@ -69,7 +69,7 @@ jobs:
   create_comment:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - uses: actions-ecosystem/action-regex-match@v2
         id: regex-match
