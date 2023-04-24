@@ -1,6 +1,6 @@
 import * as core from '@actions/core';
 
-async function run(): Promise<void> {
+export async function run(): Promise<void> {
   try {
     const text = core.getInput('text');
     const regex = core.getInput('regex');
@@ -30,4 +30,7 @@ async function run(): Promise<void> {
   }
 }
 
-run();
+run().catch((error) => {
+  console.error('An error occurred:', error);
+});
+
